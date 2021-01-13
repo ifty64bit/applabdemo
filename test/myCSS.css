@@ -1,0 +1,27 @@
+.cardholder{
+    width: 18rem;
+}
+.card{
+    width: 18rem;
+    height: 9rem;
+    position:relative;
+    transform-style: preserve-3d;
+    transition: all 1s;
+}
+.front{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(127, 255, 53);
+    position:absolute;
+    transform-style: preserve-3d;
+}
+.cardholder:hover .card{
+    transform: rotateY(180deg);
+}
+.back{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    background-color: rgb(255, 58, 133);
+    transform: rotateY(180deg);
+}
